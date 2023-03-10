@@ -1,11 +1,10 @@
 import { ReactNode } from 'react'
-
 import { Title } from './styles'
 
-interface TitleProps {
+interface SnackTitleProps {
   children: ReactNode
 }
 
-export function SnackTitle({ children }: TitleProps) {
+export function SnackTitle({ children }: SnackTitleProps) {
   return <Title>{children}</Title>
 }

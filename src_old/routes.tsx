@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom'
+import { BurgersPage } from './pages/Burgers'
+import { DrinksPage } from './pages/drinks'
+import { IceCreamsPage } from './pages/IceCreams'
 
 import MainPage from './pages/Main'
-import BurgersPage from './pages/Main/Burgers'
-import PizzasPage from './pages/Main/Pizzas'
-import DrinksPage from './pages/Main/Drinks'
-import IceCreamsPage from './pages/Main/IceCreams'
+import { PizzasPage } from './pages/Pizzas'
 
 export function AppRoutes() {
   return (

@@ -7,14 +7,17 @@ interface ContainerProps {
 export const Container = styled.aside<ContainerProps>`
   background-color: ${({ theme }) => theme.colors.red};
 
-  ${({ isMenuOpen }) =>
-    isMenuOpen
+  ${({ isMenuOpen }) => {
+    return isMenuOpen
       ? css`
           width: 16.3rem;
         `
       : css`
           width: 7.75rem;
-        `}
+        `
+  }}
+
+  /* width: ${({ isMenuOpen }) => (isMenuOpen ? '16.3rem' : '7.75rem')}; */
 
   padding: 2rem 0;
   overflow: hidden;
